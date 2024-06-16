@@ -8,7 +8,8 @@ You can get sample data in the [reusable-data/](reusable-data) directory file, o
 1. Python ^2.7.x
 2. Hadoop (NameNode, DataNode, YARN)
 3. Apache Spark (PySpark)
-4. Jupyter Notebook
+4. pandas
+5. Jupyter Notebook
 
 ## Installation
 
