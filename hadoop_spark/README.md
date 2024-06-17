@@ -55,8 +55,6 @@ export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
 export HADOOP_STREAMING=$HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.4.0.jar
 export HADOOP_LOG_DIR=$HADOOP_HOME/logs
 export PDSH_RCMD_TYPE=ssh
-export SPARK_HOME=/opt/spark
-export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 ```
 ***hadoop-env.sh file***\
 add the path according to the Java installation location on the system
