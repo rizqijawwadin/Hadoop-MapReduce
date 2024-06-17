@@ -39,7 +39,8 @@ dirname $(dirname $(readlink -f $(which java)))
 ```
 
 ### Configurations
-***.bashrc :*** Configure Hadoop environment variables in the bashrc file then add the following command to the file
+***.bashrc file***\
+Configure Hadoop environment variables in the bashrc file then add the following command to the file
 ```bash
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export PATH=$PATH:/usr/lib/jvm/java-11-openjdk-amd64/bin/
@@ -57,7 +58,8 @@ export PDSH_RCMD_TYPE=ssh
 export SPARK_HOME=/opt/spark
 export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 ```
-***hadoop-env.sh :*** add the path according to the Java installation location on the system
+***hadoop-env.sh file***\
+add the path according to the Java installation location on the system
 ```sh
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
@@ -86,7 +88,8 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
   </property>
 </configuration>
 ```
-***hdfs-site.xml :*** add configuration files and customize the NameNode and DataNode directories
+***hdfs-site.xml file***\
+add configuration files and customize the NameNode and DataNode directories
 ```xml
 <configuration>
   <property>
@@ -103,7 +106,8 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
   </property>
 </configuration>
 ```
-***mapred-site.xml :*** add configuration to change the default value of MapReduce framework name to yarn
+***mapred-site.xml file***\
+add configuration to change the default value of MapReduce framework name to yarn
 ```xml
 <configuration>
   <property>
