@@ -33,6 +33,7 @@ sudo tar xvf <spark_version>-bin-hadoop3.tgz
 sudo mv <spark_version>-bin-hadoop3 /opt/spark
 ```
 ***Install Spark library on Python***
+PySpark installation using PyPI is as follows
 ```bash
 pip install pyspark
 ```
