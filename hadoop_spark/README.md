@@ -31,9 +31,9 @@ sudo chmod 640 ~/.ssh/authorized_keys
 ***Install Apache Hadoop***\
 You can get the download source at [Apache Hadoop](https://hadoop.apache.org/) and several versions are available
 ```bash
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz
+wget https://dlcdn.apache.org/hadoop/common/<hadoop_version>/<hadoop_version>.tar.gz
 # extract the downloaded file
-tar -xvzf hadoop-3.4.0.tar.gz
+tar -xvzf <hadoop_version>.tar.gz
 # variable configuration for Hadoop settings, check the location of the variable "JAVA_HOME"
 dirname $(dirname $(readlink -f $(which java)))
 ```
@@ -43,7 +43,7 @@ dirname $(dirname $(readlink -f $(which java)))
 ```bash
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export PATH=$PATH:/usr/lib/jvm/java-11-openjdk-amd64/bin/
-export HADOOP_HOME=~/hadoop-3.4.0/
+export HADOOP_HOME=~/<hadoop_version>/
 export PATH=$PATH:$HADOOP_HOME/bin
 export PATH=$PATH:$HADOOP_HOME/sbin
 export HADOOP_MAPRED_HOME=$HADOOP_HOME
@@ -141,7 +141,7 @@ ssh localhost
 ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa 
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys 
 chmod 0600 ~/.ssh/authorized_keys 
-hadoop-3.4.0/bin/hdfs namenode -format
+<hadoop_version>/bin/hdfs namenode -format
 ```
 ***Start Hadoop Cluster***
 ```bash
