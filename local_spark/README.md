@@ -10,7 +10,7 @@ Before using Spark, we need to prepare several requirements and first install Sp
 ***Install Java Development Kit (JDK)***
 ```bash
 sudo apt install default-jre
-sudo apt install default-jdk
+sudo apt install default-jdk -y
 ```
 or
 ```bash
