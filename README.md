@@ -5,7 +5,7 @@ This application is designed to analyze tweets for the presence of racist langua
 You can get sample data in the [reusable-data/](reusable-data) directory file, or if you want to modify the data yourself, you can use the source code in the ```collecting_data/``` directory file.
 
 ### Requirements
-1. Python ^2.7.x
+1. Python ^3.8.x
 2. Hadoop (NameNode, DataNode, YARN)
 3. Apache Spark (PySpark)
 4. pandas
