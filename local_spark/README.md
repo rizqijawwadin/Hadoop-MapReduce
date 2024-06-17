@@ -2,9 +2,11 @@
 Before using Spark, we need to prepare several requirements and first install Spark and carry out some configurations.
 
 ### Requirements
+
 1. Java
-2. Scala
-3. Apache Spark
+2. Python ^3.8.x
+3. Scala
+4. Apache Spark (PySpark)
 
 ### Preparation
 ***Install Java Development Kit (JDK)***
@@ -29,6 +31,10 @@ sudo wget https://dlcdn.apache.org/spark/<spark_version>/<spark_version>-bin-had
 sudo tar xvf <spark_version>-bin-hadoop3.tgz
 # Move Spark directory move the extracted Spark Directory
 sudo mv <spark_version>-bin-hadoop3 /opt/spark
+```
+***Install Spark library on Python***
+```bash
+pip install pyspark
 ```
 
 ### Configurations
