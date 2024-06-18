@@ -1,9 +1,9 @@
 #!/usr/bin/env python
+"""reducer.py"""
 
-from operator import itemgetter
 import sys
 
-current_word = {} 
+current_word = {}
 
 # input comes from STDIN
 for line in sys.stdin:
@@ -20,11 +20,16 @@ for line in sys.stdin:
         # count was not a number, so silently
         # ignore/discard this line
         continue
-    try:
-        current_word[word] = current_word[word]+count
-    except:
-       current_word[word] = count
 
-# do not forget to output the the words and its count
-for word in current_word.keys():
+    # update the count for the word
+    if word in current_word:
+        current_word[word] += count
+    else:
+        current_word[word] = count
+
+# sort the words alphabetically
+sorted_words = sorted(current_word.keys())
+
+# output the final counts in alphabetical order
+for word in sorted_words:
     print('%s\t%s' % (word, current_word[word]))
