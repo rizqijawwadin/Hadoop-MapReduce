@@ -10,7 +10,7 @@ You can get sample data in the [reusable-data/](reusable-data) directory file, o
 3. Apache Spark (PySpark)
 
 ## Installation
-I have explained the steps for installing Hadoop and Spark in the [hadoop_spark/](hadoop_spark/README.md) file, you can immediately read and follow each step.
+I have explained the steps for installing Hadoop and Spark in the [hadoop_mapred/](hadoop_spark/README.md) file, you can immediately read and follow each step.
 
 ## Usage
 ***Make sure the mapper and reducer files have execute permission***
